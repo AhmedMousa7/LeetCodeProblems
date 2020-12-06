@@ -20,6 +20,6 @@ fun rob(nums: IntArray): Int {
     for (i in 1 until nums.size) {
         dp[i + 1] = max(dp[i], dp[i - 1] + nums[i])
     }
-    println(dp.toList().toString())
+
     return dp[nums.size]
 }
