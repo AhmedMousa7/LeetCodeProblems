@@ -3,11 +3,10 @@ import kotlin.time.measureTimedValue
 
 @ExperimentalTime
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val result = measureTimedValue {
         climbStairs(7)
     }
-    println(value)
-    println(duration)
+    println(result.value)
 }
 
 fun climbStairs(n: Int): Int {

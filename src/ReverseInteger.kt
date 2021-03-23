@@ -3,11 +3,10 @@ import kotlin.time.measureTimedValue
 
 @ExperimentalTime
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val value = measureTimedValue {
         reverse(1534236469)
     }
     println(value)
-    println(duration)
 }
 
 fun reverse(x: Int): Int {

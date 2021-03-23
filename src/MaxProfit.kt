@@ -3,11 +3,10 @@ import kotlin.time.measureTimedValue
 
 @ExperimentalTime
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val value = measureTimedValue {
         maxProfit(arrayOf(3,3,5,0,0,3,1,4).toIntArray())
     }
     println(value)
-    println(duration)
 }
 
 fun maxProfit(prices: IntArray): Int {

@@ -4,11 +4,10 @@ import kotlin.time.measureTimedValue
 
 @ExperimentalTime
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val value = measureTimedValue {
         rob(arrayOf(1,2,0,5).toIntArray())
     }
     println(value)
-    println(duration)
 }
 
 fun rob(nums: IntArray): Int {

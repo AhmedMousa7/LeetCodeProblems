@@ -3,11 +3,10 @@ import kotlin.time.measureTimedValue
 
 @ExperimentalTime
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val value = measureTimedValue {
         intToRoman(65)
     }
     println(value)
-    println(duration)
 }
 
 fun intToRoman(num: Int): String {

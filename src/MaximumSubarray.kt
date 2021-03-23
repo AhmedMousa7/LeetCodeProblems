@@ -5,12 +5,11 @@ import kotlin.time.measureTimedValue
 
 @ExperimentalTime
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val value = measureTimedValue {
         val array = arrayOf(-2,1,-3,4,-1,2,1,-5,4)
         maxSubArray(array.toIntArray())
     }
     println(value)
-    println(duration)
 }
 
 fun maxSubArray(nums: IntArray): Int {
