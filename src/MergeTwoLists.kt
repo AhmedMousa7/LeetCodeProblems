@@ -2,7 +2,7 @@
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 
-    override fun toString(): String {
+/*    override fun toString(): String {
         var result = "$`val`, "
 
         while (next != null){
@@ -10,7 +10,7 @@ class ListNode(var `val`: Int) {
             next = next?.next
         }
         return result
-    }
+    }*/
 }
 
 fun main() {
@@ -26,7 +26,7 @@ fun main() {
     node20.next = node30
     node10.next = node20
 
-    println(mergeTwoLists(node1, node10))
+    //println(mergeTwoLists(node1, node10))
 }
 
 fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
